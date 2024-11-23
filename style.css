@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #3b4068, #cb5469, #53acc3, #8d3456, #4291b4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/*formulário*/
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*título do formulário*/
+h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+/*entradas*/
+.input-container {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+/*ícone dentro das caixas de entrada*/
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*texto e senha*/
+.input-container input[type="text"],
+.input-container input[type="password"] {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(33, 39, 43, 0.8);
+    color: white;
+    font-size: 16px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-container input[type="text"]:focus,
+.input-container input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #cb5469;
+}
+
+/*botão de envio*/
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #cb5469;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/*faz o botão mudar de cor quando o usuário apertar no botão*/
+input[type="submit"]:hover {
+    background-color: #8d3456;
+}

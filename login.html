@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <form>
+        <h3>Login</h3>
+        <div class="input-container">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Login" id="login">
+        </div>
+        <div class="input-container">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Senha" id="senha">
+        </div>
+        <input type="submit" onclick="logar(); return false" value="Entrar">
+    </form>
+
+    <!--javascript-->
+    <script>
+        function logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if (login === "admin" && senha === "admin") {
+                alert('Sucesso!');
+                location.href = "site.html";
+            } else {
+                alert('Usuário ou senha incorretos');
+            }
+        }
+    </script>
+
+</body>
+</html>
